@@ -1,0 +1,16 @@
+:root{
+    --verde-medio:#2E7D32;
+    --rojo-claro:#FA421B
+    --azul: ##0288D1;
+    --fondo: #ffffff;
+    --texto: #1A1A1A1A;
+    --fuente: 'Montserrat', sans-serif;
+}
+
+<!-- Reset -->
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
