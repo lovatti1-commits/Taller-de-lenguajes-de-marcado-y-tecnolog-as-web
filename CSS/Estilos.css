@@ -1,20 +1,16 @@
-body {
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
+:root{
+    --verde-medio:#2E7D32;
+    --rojo-claro:#FA421B;
+    --azul: #0288D1;
+    --fondo: #ffffff;
+    --texto: #1A1A1A1A;
+    --fuente: 'Montserrat', sans-serif;
 }
 
-h1 {
-    font-size: 30px ;
-    color:var(--verde-medio) ;
+<!-- Reset -->
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
 }
 
-h2 {
-    font-size: 24px;
-    color: var(--azul) ;
-}
-
-h3 {
-    font-size: 18px ;
-    color: var(--rojo-claro);
-}
