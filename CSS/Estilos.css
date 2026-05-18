@@ -1,9 +1,9 @@
 :root{
-    --verde-medio:#2E7D32;
+    --verde-medio:#2e7d69;
     --rojo-claro:#FA421B;
     --azul: #0288D1;
     --fondo: #ffffff;
-    --texto: #1A1A1A1A;
+    --texto:#1A1A1A;
     --fuente: 'Montserrat', sans-serif;
 }
 
@@ -14,15 +14,45 @@
     padding:0;
 }
 
+header{
+    background-color: var(--verde-medio);
+    color: var(--fondo);
+    padding: 20px;
+    margin: 20px;
+}
+
+nav a{
+    margin: 20px;
+}
+
+main{
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+section{
+    padding: 20px;
+    margin: 20px;
+}
+
+p {
+    padding: 20px;
+    margin: 20px;
+}
+
+
 body {
-    font-family: "Poppins", sans-serif;
+    background-color: var(--fondo);
+    color: var(--texto);
+    font-family:var(--fuente);
     font-size: 16px;
     line-height: 1.6;
 }
 
 h1 {
     font-size: 30px ;
-    color:var(--verde-medio);
+    color:var(--fondo);
 }
 
 h2 {
@@ -35,3 +65,9 @@ h3 {
     color: var(--rojo-claro);
 }
 
+footer{
+    background-color: var(--azul);
+    color: var(--fondo);
+    padding: 20px;
+    margin: 20px;
+}
