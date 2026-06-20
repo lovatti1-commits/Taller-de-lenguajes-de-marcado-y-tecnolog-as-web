@@ -88,6 +88,12 @@ ul {
         border: var(--verde-medio);
         border-radius: 8px;
         margin-bottom: 1.5rem;
+    
+        display: flex;              /* activa Flexbox */
+        flex-direction: column;     /* organiza los hijos en columna */
+        justify-content: flex-start;/* alineación vertical */
+        align-items: flex-start;    /* alineación horizontal */
+        gap: 1rem;                  /* espacio entre elementos */
 }
 
 .programa:hover {
