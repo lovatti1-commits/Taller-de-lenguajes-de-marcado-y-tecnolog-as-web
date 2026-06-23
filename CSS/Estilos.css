@@ -1,95 +1,89 @@
-/* ============================================
+/* ====================================
    ESTILOS.CSS - RÍOS VIVOS ARGENTINA
-   ============================================ */
+   ==================================== */
 
-/* Variables CSS */
+/* === Variables CSS === */
 :root{
-    --verde-medio: #2e7d69;
-    --rojo-claro: #FA421B;
-    --azul: #0288D1;
-    --fondo: #ffffff;
-    --texto: #1A1A1A;
+    --verde-principal: #2e7d69;
+    --verde-claro: #4ade80;
+    --azul-agua: #0288D1;
+    --rojo-accion: #FA421B;
+    --beige-fondo: #f8f5f0;
+    --texto: #1f2937;
     --fuente: 'Montserrat', sans-serif;
 }
 
-/* Reset básico */
+/* === Reset básico === */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Estilos generales del body */
 body {
-    background-color: var(--fondo);
-    color: var(--texto);
     font-family: var(--fuente);
-    font-size: 16px;
-    line-height: 1.6;
-    max-width: 1200px;
-    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--texto);
+    background-color: var(--beige-fondo);
 }
 
-/* Header */
-header{
-    background-color: var(--verde-medio);
-    color: var(--fondo);
-    padding: 20px;
-    margin: 20px;
-    text-align: center;
+/* === Header & Navbar === */
+header {
+    background-color: var(--verde-principal);
 }
 
-h1 {
-    font-size: 30px;
-    color: var(--fondo);
+/* Personalización de Bootstrap Navbar */
+.navbar {
+    padding: 1.2rem 0;
 }
 
-/* Navegación */
-nav a{
-    margin: 20px;
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* === Hero === */
+#hero {
+    position: relative;
+    height: 500px;
+}
+
+#hero img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* === Secciones === */
+section {
+    padding: 3.5rem 1rem;
+}
+
+/* === Cards Bootstrap personalizadas === */
+.card {
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(46, 125, 105, 0.2);
+}
+
+/* === Footer === */
+footer {
+    background-color: var(--azul-agua);
     color: white;
-    text-decoration: none;
-    font-weight: 500;
 }
 
-nav a:hover {
-    color: var(--rojo-claro);
-    text-decoration: underline;
+/* === Utilidades extras === */
+.btn-warning {
+    background-color: var(--rojo-claro);
+    border-color: var(--rojo-claro);
 }
 
-/* Main y secciones */
-main{
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 1200px;
-}
-
-section{
-    padding: 20px;
-    margin: 20px;
-}
-
-p {
-    padding: 20px;
-    margin: 20px;
-}
-
-/* Tipografía de headings */
-h2 {
-    font-size: 24px;
-    color: var(--azul);
-}
-
-h3 {
-    font-size: 18px;
-    color: var(--rojo-claro);
-}
-
-/* Footer */
-footer{
-    background-color: var(--azul);
-    color: var(--fondo);
-    padding: 20px;
-    margin: 20px;
-    text-align: center;
+.btn-warning:hover {
+    background-color: #d93a18;
+    border-color: #d93a18;
 }

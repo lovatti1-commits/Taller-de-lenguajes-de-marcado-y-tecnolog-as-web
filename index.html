@@ -47,10 +47,16 @@
     </header>
 
     <main>
-        <section id="hero">
-            <h2>Cuidar el agua es cuidar la vida</h2>
-            <img src="https://picsum.photos/id/1015/800/400" alt="Río cristalino rodeado de vegetación natural en Argentina">
-            <p>Trabajamos por la recuperación y protección de las cuencas hídricas de nuestro país.</p>
+        <section id="hero" class="position-relative">
+            <div class="position-absolute top-50 start-50 translate-middle text-center w-100 px-4">
+                <h2 class="display-4 fw-bold text-white mb-4">Cuidar el agua es cuidar la vida</h2>
+                <p class="lead text-white mb-4">Trabajamos por la recuperación y protección de las cuencas hídricas de nuestro país.</p>
+                <a href="#programas-destacados" class="btn btn-warning btn-lg">Conocé nuestros programas</a>
+            </div>
+            
+            <img src="https://picsum.photos/id/1015/1200/600" 
+                 alt="Río cristalino rodeado de vegetación natural en Argentina" 
+                 class="w-100">
         </section>
 
         <section>
@@ -58,23 +64,41 @@
             <p>Buscamos reducir la <strong>contaminación hídrica</strong> mediante la acción directa y la educación, devolviéndole la salud a nuestros ríos para las futuras generaciones.</p>
         </section>
 
-        <section id="programas-destacados">
-            <h2>Programas destacados</h2>
+        <section id="programas-destacados" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Programas destacados</h2>
+                
+                <div class="row g-4">
+                    
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title">Jornadas de Limpieza</h3>
+                                <p class="card-text">Organizamos operativos voluntarios para retirar residuos de las costas del Río de la Plata y el Riachuelo.</p>
+                            </div>
+                        </div>
+                    </div>
 
-            <article>
-                <h3>Jornadas de Limpieza</h3>
-                <p>Organizamos operativos voluntarios para retirar residuos de las costas del Río de la Plata y el Riachuelo.</p>
-            </article>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title">Educación Ambiental</h3>
+                                <p class="card-text">Llevamos talleres a escuelas para concientizar sobre el impacto de los microplásticos en el agua.</p>
+                            </div>
+                        </div>
+                    </div>
 
-            <article>
-                <h3>Educación Ambiental</h3>
-                <p>Llevamos talleres a escuelas para concientizar sobre el impacto de los microplásticos en el agua.</p>
-            </article>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title">Reciclaje Comunitario</h3>
+                                <p class="card-text">Gestionamos puntos de recolección para evitar que los desechos terminen en los cauces de agua.</p>
+                            </div>
+                        </div>
+                    </div>
 
-            <article>
-                <h3>Reciclaje Comunitario</h3>
-                <p>Gestionamos puntos de recolección para evitar que los desechos terminen en los cauces de agua.</p>
-            </article>
+                </div>
+            </div>
         </section>
 
         <section>
