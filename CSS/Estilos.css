@@ -1,119 +1,89 @@
+/* ====================================
+   ESTILOS.CSS - RÍOS VIVOS ARGENTINA
+   ==================================== */
+
+/* === Variables CSS === */
 :root{
-    --verde-medio:#2e7d69;
-    --rojo-claro:#FA421B;
-    --azul: #0288D1;
-    --fondo: #ffffff;
-    --texto:#1A1A1A;
+    --verde-principal: #2e7d69;
+    --verde-claro: #4ade80;
+    --azul-agua: #0288D1;
+    --rojo-accion: #FA421B;
+    --beige-fondo: #f8f5f0;
+    --texto: #1f2937;
     --fuente: 'Montserrat', sans-serif;
 }
 
-/* Reset */
+/* === Reset básico === */
 *{
     box-sizing: border-box;
     margin: 0;
-    padding:0;
+    padding: 0;
 }
-
-header{
-    background-color: var(--verde-medio);
-    color: var(--fondo);
-    padding: 20px;
-    margin: 20px;
-}
-
-nav a{
-    margin: 20px;
-}
-
-main{
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 1200px;
-}
-
-section{
-    padding: 20px;
-    margin: 20px;
-}
-
-p {
-    padding: 20px;
-    margin: 20px;
-}
-
 
 body {
-<<<<<<< HEAD
-    background-color: var(--fondo);
-    color: var(--texto);
-    font-family:var(--fuente);
-    font-size: 16px;
-    line-height: 1.6;
-=======
-        font-family: VAR(--fuente);
-        font-size: 16PX;
-        line-height: 1.6;
-        margin: auto;
-        max-width: 1100px;
-}
-
-#programas-header {
-    background: linear-gradient(135deg, var(--azul), var(--verde-medio));
-    color: #fff;
-    text-align: center;
-    padding: 2rem 1rem;
-    border-bottom: 4px solid var(--rojo-claro);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    border-radius: 12px;
-    margin-bottom: 2rem;
-}
-
-#programas-header h1 {
     font-family: var(--fuente);
-    font-size: 2.2rem;
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--texto);
+    background-color: var(--beige-fondo);
+}
+
+/* === Header & Navbar === */
+header {
+    background-color: var(--verde-principal);
+}
+
+/* Personalización de Bootstrap Navbar */
+.navbar {
+    padding: 1.2rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
     font-weight: 700;
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-ul {
-    border: 2px solid var(--verde-medio);
-    border-radius: 8px;
-    padding: 1rem;
-    margin: 1rem 0;
-    background-color: #f4f9f4; /
 }
 
-.programa {
-        padding: 1.5rem;
-        border: var(--verde-medio);
-        border-radius: 8px;
-        margin-bottom: 1.5rem;
+/* === Hero === */
+#hero {
+    position: relative;
+    height: 500px;
 }
 
-.programa:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
->>>>>>> efcecbf3e8d31518569faa809021352625c8c693
+#hero img {
+    height: 100%;
+    object-fit: cover;
 }
 
-h1 {
-    font-size: 30px ;
-    color:var(--fondo);
+/* === Secciones === */
+section {
+    padding: 3.5rem 1rem;
 }
 
-h2 {
-    font-size: 24px;
-    color: var(--azul);
+/* === Cards Bootstrap personalizadas === */
+.card {
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
-h3 {
-    font-size: 18px ;
-    color: var(--rojo-claro);
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(46, 125, 105, 0.2);
 }
 
-footer{
-    background-color: var(--azul);
-    color: var(--fondo);
-    padding: 20px;
-    margin: 20px;
+/* === Footer === */
+footer {
+    background-color: var(--azul-agua);
+    color: white;
+}
+
+/* === Utilidades extras === */
+.btn-warning {
+    background-color: var(--rojo-claro);
+    border-color: var(--rojo-claro);
+}
+
+.btn-warning:hover {
+    background-color: #d93a18;
+    border-color: #d93a18;
 }
