@@ -138,6 +138,21 @@ footer{
     background-color: #d93a18;
     border-color: #d93a18;
 }
+
+.btn-primary{
+  backgroung-color: var(--azul-agua);
+  border-color: var(--beige-fondo);
+  border-radius: 30px;
+  padding:10px 20px;
+}
+
+.btn-primary:hover{
+  background-color: var(--rojo-accion);
+  border-color: var(--beige-fondo);
+  transform: translateY(-2px);
+  transition: 0.3s;
+}
+
 a:hover{
   color: var(--rojo-accion);
 }
