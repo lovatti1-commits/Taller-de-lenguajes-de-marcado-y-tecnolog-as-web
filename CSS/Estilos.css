@@ -40,6 +40,9 @@ header {
     font-family: var(--fuente);
     color: var(--beige-fondo);
     padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;;
 }
 
 body {
@@ -137,4 +140,18 @@ footer{
 }
 a:hover{
   color: var(--rojo-accion);
+}
+.contacto-contenedor{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.redes{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
 }
