@@ -28,9 +28,46 @@ body {
     background-color: var(--beige-fondo);
 }
 
+main{
+    padding: 15px;
+    margin: 25px auto;
+    max-width: 1200px;
+}
+
 /* === Header & Navbar === */
 header {
     background-color: var(--verde-principal);
+    font-family: var(--fuente);
+    color: var(--beige-fondo);
+    padding: 10px;
+}
+
+body {
+    background-color: var(--beige-fondo);
+    color: var(--texto);
+    font-family:var(--fuente);
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+p {
+    line-height: 1.6;
+    font-family: var(--fuente);
+    margin: 8px 0;
+}
+
+h1 {
+    font-family: var(--fuente);
+    font-size: 40px;
+    color: var(--azul-agua);
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 24px;
+    color: var(--texto);
 }
 
 /* Personalización de Bootstrap Navbar */
@@ -41,6 +78,11 @@ header {
 .navbar-brand {
     font-size: 1.8rem;
     font-weight: 700;
+}
+
+nav a{
+    color: var(--beige-fondo);
+    margin: 20px;
 }
 
 /* === Hero === */
@@ -55,8 +97,10 @@ header {
 }
 
 /* === Secciones === */
-section {
-    padding: 3.5rem 1rem;
+section{
+    line-height: 1.4;
+    padding: 15px;
+    margin: 25px;
 }
 
 /* === Cards Bootstrap personalizadas === */
@@ -72,18 +116,25 @@ section {
 }
 
 /* === Footer === */
-footer {
-    background-color: var(--azul-agua);
-    color: white;
+footer{
+    background-color: var(--verde-principal);
+    font-family: var(--fuente);
+    color: var(--beige-fondo);
+    text-align: center;
+    padding: 30px;
+    margin: 0;
 }
 
 /* === Utilidades extras === */
 .btn-warning {
-    background-color: var(--rojo-claro);
-    border-color: var(--rojo-claro);
+    background-color: var(--rojo-accion);
+    border-color: var(--rojo-accion);
 }
 
 .btn-warning:hover {
     background-color: #d93a18;
     border-color: #d93a18;
+}
+a:hover{
+  color: var(--rojo-accion);
 }
