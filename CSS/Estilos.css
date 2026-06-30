@@ -122,54 +122,66 @@ section{
 }
 /* Programas*/
 
-body.programas-body {
-  background: linear-gradient(180deg, #e0f7fa, #f8f5f0);
-}
-#programas-header {
-    background: linear-gradient(135deg, var(--azul-agua), var(--verde-principal));
-    color: #fff;
-    text-align: center;
-    padding: 2rem 1rem;
-    border-bottom: 4px solid var(--rojo-accion);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    border-radius: 12px;
-    margin-bottom: 2rem;
+body.programas-body { /* Aplica estilos solo al body con clase "programas-body" */
+  background: linear-gradient(180deg, #e0f7fa, #f8f5f0); /* Fondo con degradado vertical de celeste a beige */
 }
 
-#programas-header h1 {
-    font-family: var(--fuente);
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-ul {
-    border: 2px solid var(--verde-principal);
-    border-radius: 8px;
-    padding: 1rem;
-    margin: 1rem 0;
-    background-color: #f4f9f4; /
-}
-.programas-contenedor {
-  display: flex;
-  flex-wrap: wrap;          
-  gap: 20px;                
-  flex-direction: column; 
-}
-.programa {
-        padding: 1.5rem;
-        border: var(--verde-principal);
-        border-radius: 8px;
-        margin-bottom: 1.5rem;
-
-      
+#programas-header { /* Estilos para el encabezado con id "programas-header" */
+    background: linear-gradient(135deg, var(--azul-agua), var(--verde-principal)); /* Fondo degradado diagonal con colores personalizados */
+    color: #fff; /* Texto en color blanco */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 2rem 1rem; /* Espaciado interno: 2rem arriba/abajo y 1rem a los lados */
+    border-bottom: 4px solid var(--rojo-accion); /* Línea inferior roja de 4px */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Sombra para dar profundidad */
+    border-radius: 12px; /* Bordes redondeados de 12px */
+    margin-bottom: 2rem; /* Separación inferior de 2rem */
 }
 
-.programa:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
-    border: 2px solid var(--azul-agua); 
-    border-radius: 10px; 
+#programas-header h1 { /* Estilos específicos para el título dentro del header */
+    font-family: var(--fuente); /* Fuente definida en variables */
+    font-size: 2.2rem; /* Tamaño de letra grande */
+    font-weight: 700; /* Texto en negrita */
+    margin: 0; /* Elimina márgenes por defecto */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Sombra al texto para resaltar */
+}
+
+ul { /* Estilos para listas desordenadas */
+    border: 2px solid var(--verde-principal); /* Borde verde de 2px */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 1rem; /* Espaciado interno */
+    margin: 1rem 0; /* Margen superior e inferior */
+    background-color: #f4f9f4; /* Fondo verde muy claro */
+}
+
+.programas-contenedor { /* Contenedor de programas */
+  display: flex; /* Activa el modelo flexbox */
+  flex-wrap: wrap; /* Permite que los elementos se acomoden en varias líneas si es necesario */
+  gap: 20px; /* Espacio de 20px entre elementos */
+  flex-direction: column; /* Organiza los elementos en columna */
+}
+
+.programa { /* Estilos para cada programa individual */
+        padding: 1.5rem; /* Espaciado interno */
+        border: 2px solid var(--verde-principal); /* Borde verde definido con grosor y estilo */
+        border-radius: 8px; /* Bordes redondeados */
+        margin-bottom: 1.5rem; /* Separación inferior entre programas */
+        transition: all 0.3s ease; /* Transición suave para efectos hover */
+}
+
+.programa:hover { /* Estilos cuando el usuario pasa el mouse por encima */
+    transform: translateY(-4px); /* Eleva el elemento 4px hacia arriba */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25); /* Sombra más intensa */
+    border: 2px solid var(--azul-agua); /* Borde azul de 2px */
+    border-radius: 10px; /* Bordes más redondeados al hacer hover */
+} /* ← ESTA llave faltaba */
+
+#buscador { /* Estilos para el input de búsqueda */
+  max-width: 400px;
+  margin: 0 auto;
+  border: 2px solid var(--verde-principal);
+  border-radius: 8px;
+  padding: 0.6rem;
+  font-size: 1rem;
 }
 /* === Footer === */
 footer{
