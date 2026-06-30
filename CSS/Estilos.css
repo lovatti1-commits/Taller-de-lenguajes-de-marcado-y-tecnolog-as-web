@@ -19,19 +19,22 @@
     margin: 0;
     padding: 0;
 }
-
+html{
+    height:100%;}
 body {
     font-family: var(--fuente);
     font-size: 17px;
     line-height: 1.7;
     color: var(--texto);
     background-color: var(--beige-fondo);
+    height: 100%;
 }
 
 main{
     padding: 15px;
     margin: 25px auto;
     max-width: 1200px;
+    flex:1;
 }
 
 /* === Header & Navbar === */
