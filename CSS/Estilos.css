@@ -61,6 +61,15 @@ html{
     box-shadow: 0 15px 25px rgba(46, 125, 105, 0.2);
 }
 
+/* === Footer === */
+footer{
+    background-color: var(--verde-principal);
+    font-family: var(--fuente);
+    color: var(--beige-fondo);
+    text-align: center;
+    padding: 30px;
+    margin: 0;
+}
 
 /* === Utilidades extras === */
 .btn-warning {
@@ -267,22 +276,9 @@ del formulario fue exitoso o tuvo errores.
   padding: 25px;
 } 
 
-.error{ 
-  color:red; 
-  font-weight: bold; 
-  text-align:center;
-  margin-top: 20px; 
-  padding: 25px;
+.error{
+    color:red;
+    font-weight: bold;
+    text-align:center;
+    margin: top 10px;
 }
-
-/* ======================================
-PIE DE PÁGINA
-====================================== */ 
-footer{ 
-  background-color: var(--verde-principal);   
-  font-family: var(--fuente); 
-  color: var(--beige-fondo); 
-  text-align: center; 
-  padding: 30px; 
-  margin: 0; 
-} 
