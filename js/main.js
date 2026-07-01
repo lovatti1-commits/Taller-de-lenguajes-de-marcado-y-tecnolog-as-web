@@ -1,22 +1,30 @@
+// -- Obtengo el formulario y el párrafo donde mostraré mensajes --
+
 const form = document.getElementById('formularioContacto');
 const mensaje = document.getElementById('mensaje');
 
-if (form) { // solo corre si existe el formulario
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
+//-- Corroboro que exista el formulario antes de ejecutar el código --
+if (form) { //-- solo corre si existe el formulario --
 
+  // Escucho el evento "submit" del formulario
+  form.addEventListener('submit', (e) => {
+    e.preventDefault(); //-- Evito que se recargue la página --
+
+    //-- agarro los valores de los campos y les saco espacios extra --
     const nombre = document.getElementById("nombre").value.trim();
     const email = document.getElementById("email").value.trim();
     const mensajeTexto = document.getElementById("mensajeTexto").value.trim();
 
+    //-- si falta algún campo, muestro error --
     if (!nombre || !email || !mensajeTexto) {
       mensaje.textContent = "Por favor, completá todos los campos";
       mensaje.className = "error";
       return;
     } else {
+      //-- Si todo está completo, muestro mensaje de éxito --
       mensaje.textContent = "Gracias por tu mensaje, en breve estaremos en contacto";
       mensaje.className = "exito";
-      form.reset();
+      form.reset(); // -- Limpio el formulario --
     }
   });
 }

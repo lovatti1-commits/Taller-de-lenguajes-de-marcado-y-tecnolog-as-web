@@ -12,19 +12,24 @@
     <link rel="stylesheet" href="CSS/Estilos.css">
 </head>
 <body>
+
+  <!-- HEADER con Navbar Bootstrap -->
+
       <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-success">
           <div class="container-fluid">
 
+            <!-- nombre de la ONG en el header -->
             <a class="navbar-brand fw-bold fs-3" href="index.html">Ríos Vivos Argentina</a>
 
+            <!-- Botón hamburguesa -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
               data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
               aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
 
-
+            <!-- Menú de navegación -->
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                   <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
@@ -37,10 +42,11 @@
       </nav>
     </header>
   
+ <!-- MAIN con sección de contacto -->
 <main>
-
     <section class="contacto-contenedor">
-        
+
+     <!-- Información de contacto -->
     <div class="info-contacto">
 
       <div class="bloque-contacto">
@@ -68,6 +74,7 @@
       </div>
     </div>
 
+    <!-- Formulario de contacto -->
     <div class="formulario-contacto">
 
         <h2><b>Contactanos</b></h2>
@@ -82,8 +89,11 @@
 
           <label for="mensajeTexto">Mensaje</label>
           <textarea id="mensajeTexto"></textarea>
+
+          <!-- Botón Bootstrap -->
           <button type="submit" class="btn btn-primary">Enviar</button>
 
+          <!-- Mensaje de confirmación -->
           <p id="mensaje"></p>
         </form>
     </div>

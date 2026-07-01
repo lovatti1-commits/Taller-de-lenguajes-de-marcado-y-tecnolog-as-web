@@ -242,8 +242,8 @@ margin-top:10px;
 }
 
 .bloque-contacto:last-child {
-    border-bottom: none;   /* Quita la línea en el último bloque */
-    margin-bottom: 0;      /* Elimina espacio extra */
+    border-bottom: none;   
+    margin-bottom: 0;      
     padding-bottom: 0;
 }
 
