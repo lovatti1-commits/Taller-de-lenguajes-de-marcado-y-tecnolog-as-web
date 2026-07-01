@@ -121,6 +121,19 @@ a:hover{
   color: var(--rojo-accion); 
 } 
 
+nav ul {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+  display: flex;   
+  justify-content: center;
+  gap: 15px; 
+}
+
+nav li {
+  display: inline; 
+}
+
 
 /* ======================================
 ENCABEZADO Y MENÚ DE NAVEGACIÓN
@@ -130,7 +143,7 @@ header {
   background-color: var(--verde-principal);   
   font-family: var(--fuente); 
   color: var(--beige-fondo); 
-  padding: 10px; 
+  padding: 20px; 
   position: sticky; 
   top: 0; 
   z-index: 1000;
@@ -168,6 +181,9 @@ h1 {
 h2 { 
   font-size: 24px; 
   color: var(--verde-principal); 
+  text-align: center;
+  font-size: 30px;
+  padding: 25px;
 } 
 
 /* ======================================
@@ -178,17 +194,14 @@ y el formulario utilizando Flexbox.
 .contacto-contenedor{ 
   display: flex; 
   justify-content: space-between; 
-  align-items: flex-start; 
+  align-items: stretch;
   gap: 40px; 
   flex-wrap: wrap; 
 } 
 
 .info-contacto p {
-margin: 0 0 10px 0;
+    margin: 0 0 10px 0;
 }
-
-
-
 
 .info-contacto a {
 display: inline-block;
@@ -208,6 +221,7 @@ margin-top:10px;
     padding: 35px;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0,0,0,.08);
+
 } 
 
 .formulario-contacto input,
@@ -227,6 +241,12 @@ margin-top:10px;
     border-bottom:1px solid #eee;
 }
 
+.bloque-contacto:last-child {
+    border-bottom: none;   /* Quita la línea en el último bloque */
+    margin-bottom: 0;      /* Elimina espacio extra */
+    padding-bottom: 0;
+}
+
 textarea{
     min-height:150px;
 }
@@ -240,7 +260,6 @@ y su efecto al pasar el cursor.
 
 .btn-primary{ 
   background-color: var(--verde-principal);         
-  border-color: var(--beige-fondo); 
   border-radius: 30px; 
   padding:10px 20px; 
   box-shadow:0 8px 16px 0 rgba(0,0,0,0.6)
@@ -273,12 +292,15 @@ del formulario fue exitoso o tuvo errores.
   font-weight: bold; 
   text-align: center;
   margin-top: 20px; 
-  padding: 25px;
+  padding-top: 25px;
+  font-style: italic;
 } 
 
 .error{
     color:red;
     font-weight: bold;
     text-align:center;
-    margin: top 10px;
+    margin-top: 20px;
+    padding-top: 25px;
+    font-style: italic; 
 }
